@@ -14,13 +14,14 @@ import net.thucydides.core.annotations.DefaultUrl;
 public class PaymentShopPage extends DeliveryMethodPage{
   // Locators
   // -------------------------------------------------------------------------------------------------------------------
-  public static By MY_PAYMENT_OPTIONS_TITLE;
-  public static By CONTINUE_BUTTON;
-  public static By ADD_NEW_CARD_OPTION;
-  public static By CARD_NAME_FIELD;
-  public static By CARD_NUMBER_FIELD;
-  public static By EXPIRY_MONTH_FIELD;
-  public static By EXPIRY_YEAR_FIELD;
+  public static By MY_PAYMENT_OPTIONS_TITLE = text("My Payment Options");
+  public static By CONTINUE_BUTTON = css("button[aria-label='Proceed to review']");
+  public static By ADD_NEW_CARD_OPTION = xpath("//mat-panel-title[contains(text(), ' Add new card ')]");
+  //public static By CARD_NAME_FIELD = xpath("//*[@role='region']/div/div/mat-form-field/div/div/*[@class='mat-form-field-infix ng-tns-c126-64']/input");
+  public static By CARD_NAME_FIELD =css("div[class*=mat-expansion-panel-body]>div>mat-form-field:nth-of-type(1)>div>div:nth-of-type(1)>div[class*=mat-form-field-infix]>input");
+  public static By CARD_NUMBER_FIELD = css("input[type='number']");
+  public static By EXPIRY_MONTH_FIELD = css("div[class*=mat-expansion-panel-body]>div>mat-form-field:nth-of-type(3)>div>div:nth-of-type(1)>div[class*=mat-form-field-infix]>select");
+  public static By EXPIRY_YEAR_FIELD = xpath("//select[contains(., 'Expiry Year')]");
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
   public void waitForPageToLoad(){

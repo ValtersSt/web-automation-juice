@@ -18,9 +18,10 @@ public class RegisterPage extends TopMenuSection {
   public static By EMAIL_FIELD = css("input[id='emailControl']");
   public static By PASSWORD_FIELD = css("input[id='passwordControl']");
   public static By REPEAT_PASSWORD_FIELD = css("input[id='repeatPasswordControl']");
-  public static By SECURITY_QUESTION = css("mat-select[role='combobox']");
+  //public static By SECURITY_QUESTION = css("mat-select[role='combobox']");
+  public static By SECURITY_QUESTION = css("mat-select[name='securityQuestion']");
   public static By NAME_OF_FAVORITE_PET_OPTION = xpath("//span[contains(text(), 'Name of your favorite pet?')]");
-  public static By SECURITY_QUESTION_LIST = css("mat-select[aria-label='Selection list for the security question']");
+  public static By SECURITY_QUESTION_LIST = css("span[class='mat-option-text']");
   public static By SECURITY_ANSWER_FIELD = css("input[id='securityAnswerControl']");
   public static By REGISTRATION_BUTTON = css("button[id='registerButton']");
 

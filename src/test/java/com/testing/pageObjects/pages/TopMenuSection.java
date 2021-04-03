@@ -17,14 +17,14 @@ public class TopMenuSection extends BasePage {
   public static By LOGIN_BUTTON =css("button[id='navbarLoginButton']");
   public static By SEARCH_ICON = xpath("//mat-icon[contains(text(), 'search')]");
   public static By SEARCH_FIELD = css("input[id='mat-input-0']");
-  public static By SHOPPING_CART_BUTTON;
+  public static By SHOPPING_CART_BUTTON = css("button[aria-label='Show the shopping cart']");
   public static By CHOOSE_LANGUAGE_BUTTON = css("button[aria-label='Language selection menu']");
-  public static By LANGUAGE_LIST =css("div[class='mat-radio-button mat-menu-item mat-accent ng-tns-c244-3 ng-star-inserted']");
-  public static By ORDERS_AND_PAYMENT_OPTION;
-  public static By PRIVACY_AND_SECURITY_OPTION;
-  public static By LOGOUT_BUTTON;
-  public static By CHANGE_PASSWORD_BUTTON;
-  public static By DIGITAL_WALLET_OPTION;
+  public static By LANGUAGE_LIST =css("span[class='mat-radio-label-content']");
+  public static By ORDERS_AND_PAYMENT_OPTION = css("button[aria-label='Show Orders and Payment Menu']");
+  public static By PRIVACY_AND_SECURITY_OPTION = css("button[aria-label='Show Privacy and Security Menu']");
+  public static By LOGOUT_BUTTON = css("button[id='navbarLogoutButton']");
+  public static By CHANGE_PASSWORD_BUTTON = css("button[id='resetButton']");
+  public static By DIGITAL_WALLET_OPTION = css("button[aria-label='Go to wallet page']");
 
   // Public methods
   // -------------------------------------------------------------------------------------------------------------------
