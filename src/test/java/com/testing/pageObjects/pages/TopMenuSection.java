@@ -23,7 +23,7 @@ public class TopMenuSection extends BasePage {
   public static By ORDERS_AND_PAYMENT_OPTION = css("button[aria-label='Show Orders and Payment Menu']");
   public static By PRIVACY_AND_SECURITY_OPTION = css("button[aria-label='Show Privacy and Security Menu']");
   public static By LOGOUT_BUTTON = css("button[id='navbarLogoutButton']");
-  public static By CHANGE_PASSWORD_BUTTON = css("button[id='resetButton']");
+  public static By CHANGE_PASSWORD_BUTTON = css("button[aria-label='Go to change password page']");
   public static By DIGITAL_WALLET_OPTION = css("button[aria-label='Go to wallet page']");
 
   // Public methods
