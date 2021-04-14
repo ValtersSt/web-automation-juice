@@ -144,8 +144,6 @@ Feature: Juice Shop Actions
       | Name    | Address               | Country |
       | Karlson | Random Address 25-395 | Sweden  |
   @run
-    # Error uz (I am on the Order summary page), neizpildas.
-    # Nezinu kur to atrast, tas bija pasiem japapildina kods?
   Scenario: Order an item
     When I "log in" with the following data:
       | Email | Password |
